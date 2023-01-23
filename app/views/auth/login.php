@@ -7,12 +7,12 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="../assets/images/favicon.ico">
+        <link rel="shortcut icon" href="<?= BASEURL; ?>images/favicon.ico">
         
         <!-- App css -->
-        <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/css/app-creative.min.css" rel="stylesheet" type="text/css" id="light-style" />
-        <link href="../assets/css/app-creative-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <link href="<?= BASEURL; ?>css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?= BASEURL; ?>css/app-creative.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="<?= BASEURL; ?>css/app-creative-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
     </head>
 
@@ -26,8 +26,8 @@
 
                             <!-- Logo -->
                             <div class="card-header pt-4 pb-4 text-center bg-primary">
-                                <a href="index.html">
-                                    <span><img src="../assets/images/logo.png" alt="" height="18"></span>
+                                <a href="register">
+                                    <span><img src="<?= BASEURL; ?>images/logo.png" alt="" height="18"></span>
                                 </a>
                             </div>
 
@@ -92,8 +92,8 @@
         </footer>
 
         <!-- bundle -->
-        <script src="../assets/js/vendor.min.js"></script>
-        <script src="../assets/js/app.min.js"></script>
+        <script src="<?= BASEURL; ?>js/vendor.min.js"></script>
+        <script src="<?= BASEURL; ?>js/app.min.js"></script>
         
     </body>
 </html>

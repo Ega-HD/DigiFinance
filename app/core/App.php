@@ -12,14 +12,14 @@ class App
         // var_dump($url);
         if(isset($url[0]))
         {
-            if(file_exists('../app/controllers/'.$url[0].'.php'))
+            if(file_exists(CONPATH . $url[0] . '.php'))
             {
                 $this->controller = $url[0];
                 unset($url[0]);
             }
         }
 
-        require_once '../app/controllers/' . $this->controller . '.php';
+        require_once CONPATH . $this->controller . '.php';
         $this->controller = new $this->controller;
 
         if(isset($url[1]))
@@ -46,6 +46,7 @@ class App
             $url = rtrim($_GET['url'], '/');
             // $url = $_GET['url'];
             $url = filter_var($url, FILTER_SANITIZE_URL);
+            $url = ucfirst($url);
             $url = explode('/', $url);
             return $url;
         }

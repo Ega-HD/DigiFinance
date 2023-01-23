@@ -7,12 +7,12 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="<?= BASEURL; ?>images/favicon.ico">
 
         <!-- App css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/app-creative.min.css" rel="stylesheet" type="text/css" id="light-style" />
-        <link href="assets/css/app-creative-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <link href="<?= BASEURL; ?>css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?= BASEURL; ?>css/app-creative.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="<?= BASEURL; ?>css/app-creative-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
     </head>
 
@@ -26,7 +26,7 @@
                             <!-- Logo-->
                             <div class="card-header pt-4 pb-4 text-center bg-primary">
                                 <a href="index.html">
-                                    <span><img src="assets/images/logo.png" alt="" height="18"></span>
+                                    <span><img src="<?= BASEURL; ?>images/logo.png" alt="" height="18"></span>
                                 </a>
                             </div>
 
@@ -37,34 +37,34 @@
                                     <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
                                 </div>
 
-                                <form action="#">
+                                <form action="Register/addUser" method="post">
 
                                     <div class="mb-3">
-                                        <label for="fullname" class="form-label">Full Name</label>
-                                        <input class="form-control" type="text" id="fullname" placeholder="Enter your name" required>
+                                        <label for="username" class="form-label">Username</label>
+                                        <input class="form-control" type="text" name="username" id="username" placeholder="Enter your username" required>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="emailaddress" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="emailaddress" required placeholder="Enter your email">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input class="form-control" type="email" name="email" id="email" placeholder="Enter your email" required>
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                                            <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" required>
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="mb-3">
+                                    <!-- <div class="mb-3">
                                         <div class="form-check">
                                             <input type="checkbox" class="form-check-input" id="checkbox-signup">
                                             <label class="form-check-label" for="checkbox-signup">I accept <a href="#" class="text-muted">Terms and Conditions</a></label>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="mb-3 text-center">
                                         <button class="btn btn-primary" type="submit"> Sign Up </button>
@@ -95,8 +95,8 @@
         </footer>
 
         <!-- bundle -->
-        <script src="assets/js/vendor.min.js"></script>
-        <script src="assets/js/app.min.js"></script>
+        <script src="<?= BASEURL; ?>js/vendor.min.js"></script>
+        <script src="<?= BASEURL; ?>js/app.min.js"></script>
         
     </body>
 </html>
