@@ -6,4 +6,8 @@ class Login extends Controller
     {
         $this->view('auth/login');
     }
+    public function verify()
+    {
+        
+    }
 }

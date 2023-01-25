@@ -38,7 +38,7 @@
                                     <p class="text-muted mb-4">Enter your email address and password to access admin panel.</p>
                                 </div>
 
-                                <form action="#">
+                                <form action="Login/verify">
 
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>

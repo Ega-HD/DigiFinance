@@ -9,6 +9,7 @@ class Controller
 
     public function model($model)
     {
-        
+        require_once MODPATH . $model . '.php';
+        return new $model;
     }
 }

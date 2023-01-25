@@ -8,6 +8,8 @@ class App
 
     public function __construct()
     {
+        // if (!empty($url))
+        //     unset($url);
         $url = $this->parseURL();
         // var_dump($url);
         if(isset($url[0]))
@@ -35,6 +37,8 @@ class App
         {
             $this->params = array_values($url);
         }
+
+        
 
         call_user_func_array([$this->controller, $this->method], $this->params);
     }

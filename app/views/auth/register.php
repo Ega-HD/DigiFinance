@@ -59,6 +59,16 @@
                                         </div>
                                     </div>
 
+                                    <div class="mb-3">
+                                        <label for="password-confirm" class="form-label">Password Confirmation</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type="password" name="password-confirm" id="password-confirm" class="form-control" placeholder="Enter your password again" required>
+                                            <div class="input-group-text" data-password="false">
+                                                <span class="password-eye"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <!-- <div class="mb-3">
                                         <div class="form-check">
                                             <input type="checkbox" class="form-check-input" id="checkbox-signup">

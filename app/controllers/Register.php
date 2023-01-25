@@ -9,6 +9,9 @@ class Register extends Controller
 
     public function addUser()
     {
-        var_dump($_POST);
+        if($this->model('UserModel')->addUser($_POST) > 0)
+        {
+            header('Location: Login');
+        }
     }
 }
